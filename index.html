@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="normalize.css"/>
+		<link rel="stylesheet" href="style.css"/>
+		<title>Mozilla Perú</title>
+	</head>
+	<body>
+		<div id="contenedor">
+			<head>				
+				<h1>
+					<img class="logo" id="logoblack" src="img/logoblack.png" alt="logo" width="450px"/>
+					<img class="logo" id="logowhite" src="img/logowhite.png" alt="logo" width="450px"/>
+				</h1>
+			</head>
+			<article>
+				<div class="winner">Premio:<input type="text" readonly="true" id="result"/></div>
+				<input type="button" value="Participa!" onclick="obtenerGanador()"/>
+				<input type="button" value="Limpiar" onclick="limpiar()"/>
+				<div>
+					<img class="muro" id="products" src="img/productos.png" alt="productos" width="240px"/>
+					<img class="muro" id="loading" src="img/gif_cargando.gif" alt="productos" width="150px"/>
+				</div>
+			</article>	
+	</body>
+</html>
