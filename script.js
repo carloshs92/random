@@ -9,6 +9,7 @@ var sigue = true;
 function limpiar(){
 	suspenso = 10;
 	sigue = true;
+	document.getElementById('products').src = 'img/productos.png';
 	//document.getElementById('result').value = " ";
 }
 
