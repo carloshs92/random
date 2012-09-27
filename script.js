@@ -9,7 +9,13 @@ var sigue = true;
 function limpiar(){
 	suspenso = 10;
 	sigue = true;
-	document.getElementById('products').src = 'img/productos.png';
+	
+	$('#products').fadeOut(function(){
+		document.getElementById('products').src = 'img/productos.png';
+	});
+	
+	$('#products').fadeIn();
+	
 	//document.getElementById('result').value = " ";
 }
 
