@@ -36,11 +36,12 @@ function obtenerGanador(){
 	});
 	$('#products').fadeOut(function(){
 		$('#loading').fadeIn();
+		setTimeout("mostrar()",tiempo);
+		aleatorio();
+		setTimeout("limpiar()",tiempo + 3000);
 	});
 	
-	setTimeout("mostrar()",tiempo);
-	aleatorio();
-	setTimeout("limpiar()",tiempo + 3000);
+	
 }
 
 function aleatorio(){
