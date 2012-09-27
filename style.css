@@ -23,5 +23,6 @@ body #contenedor #logowhite{display:none;margin-left:0px;}
 body #contenedor #products{margin-left:0px;}
 body #contenedor #loading{display:none;margin-left:0px;}
 body #contenedor .winner{padding:20px 15px;font-size:27px;}
-body #contenedor input[type="button"]{padding:10px 15px;background:#ef2a24;margin:10px 20px;border-radius:10px;border:2px solid black;font-size:17px;}
+body #contenedor input[type="button"]{color:white;padding:10px 15px;background:#FF8C00;margin:10px 20px;border-radius:50px;border:2px solid grey;font-size:25px;text-shadow: 0.1em 0.1em 0.05em #333;}
 body #contenedor input[type="text"]{padding:10px 15px;margin-left:25px;border-radius:10px;border:2px solid black;font-size:19px;}
+

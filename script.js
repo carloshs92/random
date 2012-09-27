@@ -6,35 +6,24 @@ var participantes = new Array('Pin','Sticker');
 var imagenes = new Array('img/pin.jpg','img/sticker.jpg');
 var sigue = true;
 
-function limpiar(){
-	suspenso = 10;
-	sigue = true;
-	
-	$('#products').fadeOut(function(){
-		document.getElementById('products').src = 'img/productos.png';
-	});
-	
-	$('#products').fadeIn();
-	
-	//document.getElementById('result').value = " ";
+function trick(){ //truco
+	$('#regalo').css("border","none");
 }
 
 function mostrar(){
 	$('#logowhite').fadeOut(function(){
 		$('#logoblack').fadeIn();
 		$('#loading').fadeOut(function(){
-			$('#products').fadeIn();
-		});
-		$('body').css("background","#FFFCC4");
+			$('#regalo').fadeIn();
+		});		
 	});
 }
 
 function obtenerGanador(){
 	$('#logoblack').fadeOut(function(){		
-		$('#logowhite').fadeIn();
-		$('body').css("background","#771413");
+		$('#logowhite').fadeIn();		
 	});
-	$('#products').fadeOut(function(){
+	$('#regalo').fadeOut(function(){
 		$('#loading').fadeIn();
 		setTimeout("mostrar()",tiempo);
 		aleatorio();
@@ -49,7 +38,8 @@ function aleatorio(){
 	var ganador = participantes[n];
 	var imagen = imagenes[n];
 	document.getElementById('result').value = ganador;	
-	document.getElementById('products').src = imagen;
+	document.getElementById('regalo').src = imagen;
+	$('#regalo').css("border","3px solid #808080");
 	while(sigue){
 		
 		suspenso = 25 + suspenso;
