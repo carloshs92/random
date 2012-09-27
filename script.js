@@ -1,13 +1,15 @@
 //realizado por @carlosHS92
 
 var suspenso = 10;
-var sigue = true;
 var tiempo = 4000;
+var participantes = new Array('Pin','Sticker');
+var imagenes = new Array('img/pin.jpg','img/sticker.jpg');
+var sigue = true;
 
 function limpiar(){
 	suspenso = 10;
 	sigue = true;
-	document.getElementById('result').value = " ";
+	//document.getElementById('result').value = " ";
 }
 
 function mostrar(){
@@ -28,16 +30,18 @@ function obtenerGanador(){
 	$('#products').fadeOut(function(){
 		$('#loading').fadeIn();
 	});
-	aleatorio();
+	
 	setTimeout("mostrar()",tiempo);
+	aleatorio();
+	setTimeout("limpiar()",tiempo + 3000);
 }
 
 function aleatorio(){
-	
-	var participantes = new Array('premio1','premio2','premio3','premio4');
 	var n=Math.floor(Math.random()*participantes.length);	
-	ganador = participantes[n];
+	var ganador = participantes[n];
+	var imagen = imagenes[n];
 	document.getElementById('result').value = ganador;	
+	document.getElementById('products').src = imagen;
 	while(sigue){
 		
 		suspenso = 25 + suspenso;
