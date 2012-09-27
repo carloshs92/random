@@ -1,5 +1,23 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-body{margin:0px auto;width:960px;background:#fffcc4;}body #contenedor{text-align:center;}body #contenedor .logo{position:relative;display:block;}
+body{
+	margin:0px auto;
+	width:960px;
+	background-image: url("img/grain.png"), linear-gradient(bottom, rgb(106,123,134) 13%, rgb(66,79,90) 56%);
+	background-image: url("img/grain.png"), -o-linear-gradient(bottom, rgb(106,123,134) 13%, rgb(66,79,90) 56%);
+	background-image: url("img/grain.png"), -moz-linear-gradient(bottom, rgb(106,123,134) 13%, rgb(66,79,90) 56%);
+	background-image: url("img/grain.png"), -webkit-linear-gradient(bottom, rgb(106,123,134) 13%, rgb(66,79,90) 56%);
+	background-image: url("img/grain.png"), -ms-linear-gradient(bottom, rgb(106,123,134) 13%, rgb(66,79,90) 56%);
+
+	background-image: url("img/grain.png"), -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.13, rgb(106,123,134)),
+		color-stop(0.56, rgb(66,79,90))
+	);
+}
+body #contenedor{text-align:center; height: 655px;}
+body #contenedor .logo{position:relative;display:block;}
 body #contenedor #logoblack{margin-left:260px;}
 body #contenedor #logowhite{display:none;margin-left:0px;}
 body #contenedor #products{margin-left:0px;}
