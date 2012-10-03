@@ -8,20 +8,21 @@
 		<link rel="stylesheet" href="style.css"/>
 		<title>Mozilla Perú</title>
 	</head>
-	<body>
+	<body onload="trick()">
 		<div id="contenedor">
 			<head>				
 				<h1>
-					<img class="logo" id="logoblack" src="img/logoblack.png" alt="logo" width="450px"/>
+					<img class="logo" id="logoblack" src="img/logowhite.png" alt="logo" width="450px"/>
 					<img class="logo" id="logowhite" src="img/logowhite.png" alt="logo" width="450px"/>
 				</h1>
+				<input type="button" value="¡Participa!" onclick="obtenerGanador()"/>
 			</head>
 			<article>
-				<div class="winner">Premio:<input type="text" readonly="true" id="result"/></div>
-				<input type="button" value="Participa!" onclick="obtenerGanador()"/>
+				<div class="winner"><input type="hidden" readonly="true" id="result"/></div>
+				
 				<div>
-					<img class="muro" id="products" src="img/productos.png" alt="productos" width="240px"/>
-					<img class="muro" id="loading" src="img/gif_cargando.gif" alt="productos" width="150px"/>
+					<img class="muro" id="regalo" src="" alt="" width="240px"/>
+					<img class="muro" id="loading" src="img/loading.gif" alt="" width="150px"/>
 				</div>
 			</article>	
 	</body>
